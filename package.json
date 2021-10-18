@@ -1,0 +1,34 @@
+{
+  "name": "@vt7/tsconfig-module",
+  "version": "0.0.1",
+  "description": "Auto build tsconfig for nuxt module",
+  "repository": "vuthanhbayit/tsconfig-module",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/tsConfig.js",
+  "types": "./dist/tsConfig.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "siroc build",
+    "lint": "eslint --ext .ts .",
+    "prepack": "yarn build",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+  },
+  "dependencies": {
+    "pathe": "^0.2.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@types/node": "latest",
+    "eslint": "latest",
+    "jiti": "latest",
+    "pkg-types": "^0.2.1",
+    "siroc": "^0.16.0",
+    "standard-version": "latest",
+    "typescript": "latest",
+    "unbuild": "latest"
+  }
+}
