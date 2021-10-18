@@ -45,8 +45,6 @@ const generateTsConfig: Module<TSConfig> = async function (moduleOptions) {
     this.options.tsConfig
   )
 
-  console.log({ options })
-
   for (const alias in aliases) {
     if (alias === '~~' || alias === '~') { continue }
 
