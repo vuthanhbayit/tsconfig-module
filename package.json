@@ -30,5 +30,8 @@
     "standard-version": "latest",
     "typescript": "latest",
     "unbuild": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
