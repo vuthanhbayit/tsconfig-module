@@ -14,7 +14,7 @@
     "build": "siroc build",
     "lint": "eslint --ext .ts .",
     "prepack": "yarn build",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "pathe": "^0.2.0"
