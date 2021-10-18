@@ -1,4 +1,5 @@
 ###A module auto build tsconfig.json for nuxt module support for multi app.
+Example: https://github.com/vuthanhbayit/nuxt-multi-app
 
 ## 🚀 Quick Start
 
